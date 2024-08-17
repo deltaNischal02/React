@@ -2,16 +2,33 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './Header';
 import Footer from './Footer'
+import { Container, Row, Col, Button } from 'react-bootstrap';
 function App() {
   return (
     <div  className="main">
       <Header/>
-      <div className='row'>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      </div>
+      <Container fluid> 
+        <Container>
+          <Row>
+            <h1 className='text-center'>Our Cources</h1>
+            <Col>
+            <Card/>
+            </Col>
+            <Col>
+            <Card/>
+            </Col>
+            <Col>
+            <Card/>
+            </Col>
+            <Col>
+            <Card/>
+            </Col>
+
+            
+          </Row>
+        </Container>
+      </Container>
+      
       <Footer/>
     </div>
     
